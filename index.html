@@ -103,11 +103,11 @@
             const totalWithdraw = withdrawNumber + currentWithdrawNumber;
             document.getElementById("currentWithdraw").innerText = totalWithdraw;
 
-            // const currentBalance = document.getElementById("currentBalance").innerText;
-            // // const currentBalanceNumber = parseFloat(currentBalance);
-            // const presentWithdrawNumber = parseFloat(currentBalance);
-            // const totalPresentBalance = withdrawNumber - presentWithdrawNumber;
-            // document.getElementById("currentBalance").innerText = totalPresentBalance;
+            const currentBalance = document.getElementById("currentBalance").innerText;
+            // const currentBalanceNumber = parseFloat(currentBalance);
+            const presentWithdrawNumber = parseFloat(currentBalance);
+            const totalPresentBalance = presentWithdrawNumber -withdrawNumber;
+            document.getElementById("currentBalance").innerText = totalPresentBalance;
 
             document.getElementById("withdrawAmount").value = "";
         })
